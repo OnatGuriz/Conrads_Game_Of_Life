@@ -76,8 +76,8 @@ func _on_node_2d_game_ready():
 # runs one step of the game every 0.1 seconds
 func _process(delta: float) -> void:
 	if  game_ready:
-		if(time_elapsed < 0.5):
+		if(time_elapsed < 0.25):
 			time_elapsed += delta
-		if time_elapsed > 0.5:
+		if time_elapsed > 0.25:
 			run_game()
 			time_elapsed = 0
